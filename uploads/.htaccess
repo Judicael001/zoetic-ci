@@ -1,0 +1,15 @@
+# 1. Désactiver l'exécution du moteur PHP dans ce dossier et ses sous-dossiers
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php7.c>
+    php_flag engine off
+</IfModule>
+
+# 2. Interdire l'accès direct aux fichiers ayant des extensions de script
+<FilesMatch "\.(php|php[0-9]?|phtml|phar|pl|py|jsp|asp|sh|cgi)$">
+    Require all denied
+</FilesMatch>
+
+# 3. Empêcher l'affichage de la liste des fichiers (Directory Listing)
+Options -Indexes

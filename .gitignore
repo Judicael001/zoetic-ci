@@ -1,0 +1,42 @@
+# ===================================================
+# ZoeTIC - .gitignore
+# ===================================================
+
+# Environnement & Identifiants sensibles
+.env
+.env.local
+.env.*.local
+
+# Fichiers de session et cookies de tests
+temp_*
+*.cookie
+*.txt.cookie
+temp_session_cookie.txt
+temp_cookie_blog.txt
+
+# Journaux et fichiers temporaires
+logs/
+tmp/
+*.log
+
+# Fichiers volumineux ou médias téléversés par les utilisateurs
+# (Gardez la structure des dossiers mais ignorez les gros fichiers média)
+uploads/realisations/videos/*
+!uploads/realisations/videos/.gitkeep
+uploads/realisations/audios/*
+!uploads/realisations/audios/.gitkeep
+
+# Fichiers d'environnement de développement et IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archives de sauvegardes
+*.zip
+*.tar.gz
+*.sql
+*.bak

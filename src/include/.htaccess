@@ -1,0 +1,4 @@
+# Empêche l'accès direct aux fichiers JSON de traduction
+<Files "*.json">
+    Require all denied
+</Files>
